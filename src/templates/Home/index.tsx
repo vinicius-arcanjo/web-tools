@@ -1,65 +1,28 @@
 import { useTranslations } from 'next-intl'
 
-import Head from "next/head";
-import Block from "components/Block";
-import Footer from "components/Footer";
-
+import BoxShadowGenerator from 'components/BoxShadowGenerator'
+import Container from 'components/Container'
+import Header from 'components/Header'
+import Heading from 'components/Heading'
+import Menu from 'components/Menu'
 
 const Home = () => {
-  const t = useTranslations('Home.Vercel')
+  const t = useTranslations('Home.BoxShadow')
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>{t('title')}</title>
-        <link rel="icon" href="/favicon.ico"/>
-      </Head>
-
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="rounded-md bg-gray-100 p-3 font-mono text-lg">
-            pages/index.tsx
-          </code>
-        </p>
-
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
-          <Block
-            href="https://nextjs.org/docs"
-            title={t('Card.title')}
-            description={t('Card.description')}
-          />
-
-          <Block
-            href="https://nextjs.org/learn"
-            title="Learn"
-            description="Learn about Next.js in an interactive course with quizzes!"
-          />
-
-          <Block
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            title="Examples"
-            description="Discover and deploy boilerplate example Next.js projects."
-          />
-
-          <Block
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            title="Deploy"
-            description="Instantly deploy your Next.js site to a public URL with Vercel."
-          />
+    <>
+      <Header />
+      <Container>
+        <Menu />
+        <div className="lg:pl-[19.5rem]">
+          <div className="mx-auto flex max-w-3xl flex-col items-center pt-10 xl:ml-0 xl:mr-[15.5rem] xl:max-w-none xl:pr-16">
+            <Heading>{t('title')}</Heading>
+            <BoxShadowGenerator />
+          </div>
         </div>
-      </main>
-
-      <Footer/>
-    </div>
-  );
+      </Container>
+    </>
+  )
 }
 
 export default Home
