@@ -6,7 +6,11 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    extend: {}
+    extend: {
+      boxShadow: {
+        '3xl': '0 0 5px -15px rgba(0, 0, 0, 0.3)'
+      }
+    }
   },
-  plugins: []
+  plugins: [require('flowbite/plugin')]
 }

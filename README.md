@@ -1,4 +1,14 @@
-### This is a [Next.js](https://nextjs.org/) boilerplate using [TailwindCSS](https://tailwindcss.com/).
+### This is a Web Tools project for developers using [Next.js](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/).
+###
+#### You can access this project through the link https://tools.arcanjo.dev
+
+## @TODO
+- [ ] Add new features
+- [x] Box Shadow Generator
+  - [ ] Create tests for components and pages
+  - [ ] Create control for storybook
+  - [ ] Add Portuguese language
+  - [ ] Add Dark Mode
 
 ## What is inside?
 

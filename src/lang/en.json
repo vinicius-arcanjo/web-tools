@@ -1,11 +1,7 @@
 {
   "Home": {
-    "Vercel": {
-      "title": "Create Next App",
-      "Card": {
-        "title": "Documentation",
-        "description": "Find in-depth information about Next.js features and API."
-      }
+    "BoxShadow": {
+      "title": "Box Shadow CSS Generator"
     }
   }
 }
