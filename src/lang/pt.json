@@ -1,0 +1,11 @@
+{
+  "Home": {
+    "Vercel": {
+      "title": "Create Next App",
+      "Card": {
+        "title": "Documentação",
+        "description": "Encontre informações detalhadas sobre os recursos e a API do Next.js."
+      }
+    }
+  }
+}
