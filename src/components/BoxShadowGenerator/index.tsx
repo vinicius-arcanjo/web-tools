@@ -108,7 +108,7 @@ const BoxShadowGenerator = () => {
         />
       </div>
       <div className="mr-2 mt-10 mb-2 w-full text-center">
-        <Button onButtonClick={handleButtonClick}>Copy</Button>
+        <Button onButtonClick={handleButtonClick}>Copy to Clipboard</Button>
       </div>
     </>
   )
