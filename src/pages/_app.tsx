@@ -1,14 +1,16 @@
-import {NextIntlProvider} from 'next-intl'
-import type {AppProps} from 'next/app'
+import { NextIntlProvider } from 'next-intl'
+import { ThemeProvider } from 'next-themes'
+import type { AppProps } from 'next/app'
 
 import 'styles/globals.css'
 
-function MyApp({Component, pageProps}: AppProps) {
-
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <NextIntlProvider messages={pageProps.messages}>
-      <Component {...pageProps} />
-    </NextIntlProvider>
+    <ThemeProvider attribute="class">
+      <NextIntlProvider messages={pageProps.messages}>
+        <Component {...pageProps} />
+      </NextIntlProvider>
+    </ThemeProvider>
   )
 }
 
