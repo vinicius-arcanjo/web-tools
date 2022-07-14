@@ -1,4 +1,4 @@
-### This is a [Web Tools]((https://tools.arcanjo.dev)) project for developers using [Next.js](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/).
+### This is a [Web Tools](https://tools.arcanjo.dev) project for developers using [Next.js](https://nextjs.org/) and [TailwindCSS](https://tailwindcss.com/).
 
 ### You can access this project through the link: [Dev Tools](https://tools.arcanjo.dev)
 
