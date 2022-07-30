@@ -9,10 +9,7 @@ import Heading from 'components/Heading'
 import Input from 'components/Input'
 import Output from 'components/Output'
 
-export type IpsumGeneratorProps = {
-  name: string
-}
-const IpsumGenerator = ({ name }: IpsumGeneratorProps) => {
+const IpsumGenerator = () => {
   const [values, setValues] = useState({
     p: 1,
     avgWordsPerSentence: 8,
