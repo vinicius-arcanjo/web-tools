@@ -1,14 +1,14 @@
-import { useTranslations } from 'next-intl'
-
+import IpsumGenerator from '../../components/IpsumGenerator'
 import Container from 'components/Container'
 import Header from 'components/Header'
 import Heading from 'components/Heading'
 import Menu from 'components/Menu'
-import ShadowGenerator from 'components/ShadowGenerator'
 
-const Home = () => {
-  const t = useTranslations('Home.BoxShadow')
+export type IpsumProps = {
+  title: string
+}
 
+const Ipsum = ({ title }: IpsumProps) => {
   return (
     <>
       <Header />
@@ -17,9 +17,9 @@ const Home = () => {
         <div className="lg:pl-[19.5rem]">
           <div className="mx-auto flex max-w-3xl flex-col items-center pt-10 xl:ml-0 xl:mr-[15.5rem] xl:max-w-none xl:pr-16">
             <Heading tag="h2" size="2xl">
-              {t('title')}
+              {title}
             </Heading>
-            <ShadowGenerator />
+            <IpsumGenerator />
           </div>
         </div>
       </Container>
@@ -27,4 +27,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Ipsum

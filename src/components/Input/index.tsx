@@ -41,6 +41,7 @@ const Input = ({
         id={name}
         name={name}
         onChange={onChange}
+        value={value}
         {...props}
         className={isColorInputOrRange}
       />

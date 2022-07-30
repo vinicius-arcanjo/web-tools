@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Box from 'components/Box'
+import Output from '../Output'
 import Button from 'components/Button'
 import Checkbox from 'components/Checkbox'
 import Input from 'components/Input'
 import Toast from 'components/Toast'
 
-const BoxShadowGenerator = () => {
+const ShadowGenerator = () => {
   const [values, setValues] = useState({
     color: '#999999',
     right: 10,
@@ -45,20 +45,26 @@ const BoxShadowGenerator = () => {
   return (
     <>
       {show && <Toast message={'Copied to clipboard!'} show={show} />}
-      <Box
-        color={rgba}
-        right={values.right}
-        down={values.down}
-        blur={values.blur}
-        spread={values.spread}
-        inset={values.inset}
-      />
+      <div
+        style={{
+          boxShadow: `${values.inset ? 'inset' : ''} ${values.right}px ${
+            values.down
+          }px ${values.blur}px ${values.spread}px ${rgba}`
+        }}
+        className="mt-12 h-40 w-56 border-2 border-solid border-gray-500 bg-white"
+      ></div>
+      <Output>
+        {`box-shadow: ${values.inset ? 'inset' : ''} ${values.right}px ${
+          values.down
+        }px ${values.blur}px ${values.spread}px ${rgba};`}
+      </Output>
       <div className="mt-10 w-3/6">
         <Input
           label="Color"
           name="color"
           type="color"
           isColor={true}
+          value={values.color}
           onInputChange={(v) => handleInput('color', v)}
         />
         <Input
@@ -67,6 +73,7 @@ const BoxShadowGenerator = () => {
           type="range"
           min={-100}
           max={100}
+          value={values.right}
           onInputChange={(v) => handleInput('right', v)}
         />
         <Input
@@ -75,6 +82,7 @@ const BoxShadowGenerator = () => {
           type="range"
           min={-100}
           max={100}
+          value={values.down}
           onInputChange={(v) => handleInput('down', v)}
         />
         <Input
@@ -83,6 +91,7 @@ const BoxShadowGenerator = () => {
           type="range"
           min={-100}
           max={100}
+          value={values.blur}
           onInputChange={(v) => handleInput('blur', v)}
         />
         <Input
@@ -91,6 +100,7 @@ const BoxShadowGenerator = () => {
           type="range"
           min={-100}
           max={100}
+          value={values.spread}
           onInputChange={(v) => handleInput('spread', v)}
         />
         <Input
@@ -99,6 +109,7 @@ const BoxShadowGenerator = () => {
           type="range"
           min={0}
           max={100}
+          value={values.opacity}
           onInputChange={(v) => handleInput('opacity', v)}
         />
         <Checkbox
@@ -114,4 +125,4 @@ const BoxShadowGenerator = () => {
   )
 }
 
-export default BoxShadowGenerator
+export default ShadowGenerator

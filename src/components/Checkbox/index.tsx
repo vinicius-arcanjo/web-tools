@@ -28,10 +28,10 @@ const Checkbox = ({
   }
 
   return (
-    <div className="mr-4 flex items-center justify-between">
+    <div className="mr-4 mb-5 flex items-center justify-between">
       <label
         htmlFor={name}
-        className="mr-6 font-medium text-gray-900 dark:text-gray-300"
+        className="mr-6 text-sm font-medium text-gray-900 dark:text-gray-300"
       >
         {label}
       </label>

@@ -9,8 +9,8 @@ export const MenuDevToolsItens = [
 export const MenuGeneratorItens = [
   {
     id: 1,
-    title: 'Credit Card Generator',
-    link: '#'
+    title: 'Lorem Ipsum Generator',
+    link: '/lorem-ipsum'
   }
 ]
 
