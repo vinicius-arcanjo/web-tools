@@ -20,7 +20,7 @@ const Menu = ({ isSubMenu = false }: MenuProps) => {
   const isPlayground = router.pathname.includes('/javascript')
 
   const classMenu =
-    'fixed inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] right-auto z-20 hidden w-[19.5rem] overflow-y-auto px-8 pb-10 lg:block'
+    'md:fixed inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] right-auto z-20 w-[19.5rem] overflow-y-auto px-8 pb-10 lg:block'
   const classNav = 'relative lg:text-sm lg:leading-6'
   const classList =
     'space-y-6 border-l border-slate-100 dark:border-slate-800 lg:space-y-2'

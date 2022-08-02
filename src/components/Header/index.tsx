@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="supports-backdrop-blur:bg-white/95 sticky top-0 z-40 w-full flex-none bg-white backdrop-blur transition-colors duration-500 dark:border-slate-50/[0.06] dark:bg-slate-900/75 lg:z-50 lg:border-b lg:border-slate-900/10">
       <div className="mx-auto max-w-7xl">
-        <div className="mx-4 border-b border-slate-900/10 py-4 dark:border-slate-300/10 lg:mx-0 lg:border-0 lg:px-8">
+        <div className="mx-4 hidden border-b border-slate-900/10 py-4 dark:border-slate-300/10 md:block lg:mx-0 lg:border-0 lg:px-8">
           <div className="relative flex items-center">
             <div className="relative ml-auto hidden items-center lg:flex">
               <div className="ml-6 flex items-center border-l border-slate-200 pl-6 dark:border-slate-800">
@@ -65,7 +65,6 @@ const Header = () => {
                   href="https://github.com/vinicius-arcanjo/dev-tools"
                   className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
                 >
-                  <span className="sr-only">Tailwind CSS on GitHub</span>
                   <svg
                     viewBox="0 0 16 16"
                     className="h-5 w-5"
@@ -131,28 +130,28 @@ const Header = () => {
               ></path>
             </svg>
           </button>
-          <ol className="ml-4 flex min-w-0 whitespace-nowrap text-sm leading-6">
-            <li className="flex items-center">
-              Sizing
-              <svg
-                width="3"
-                height="6"
-                aria-hidden="true"
-                className="mx-3 overflow-visible text-slate-400"
-              >
-                <path
-                  d="M0 0L3 3L0 6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                ></path>
-              </svg>
-            </li>
-            <li className="truncate font-semibold text-slate-900 dark:text-slate-200">
-              Height
-            </li>
-          </ol>
+          {/*<ol className="ml-4 flex min-w-0 whitespace-nowrap text-sm leading-6">*/}
+          {/*  <li className="flex items-center">*/}
+          {/*    Sizing*/}
+          {/*    <svg*/}
+          {/*      width="3"*/}
+          {/*      height="6"*/}
+          {/*      aria-hidden="true"*/}
+          {/*      className="mx-3 overflow-visible text-slate-400"*/}
+          {/*    >*/}
+          {/*      <path*/}
+          {/*        d="M0 0L3 3L0 6"*/}
+          {/*        fill="none"*/}
+          {/*        stroke="currentColor"*/}
+          {/*        strokeWidth="1.5"*/}
+          {/*        strokeLinecap="round"*/}
+          {/*      ></path>*/}
+          {/*    </svg>*/}
+          {/*  </li>*/}
+          {/*  <li className="truncate font-semibold text-slate-900 dark:text-slate-200">*/}
+          {/*    Height*/}
+          {/*  </li>*/}
+          {/*</ol>*/}
         </div>
       </div>
     </div>
